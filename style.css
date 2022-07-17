@@ -1,3 +1,109 @@
-h1, h2 {
-  font-family: Lato;
+* {
+  margin: 0; /*removes the default margin from the the html document*/
+}
+
+.main {
+  background-color: black;
+  display: flex; /* Makes the container as flex box*/
+  flex-direction: row;
+  /*By default flex direction as row: Setting this makes the horizontal axis as the main axis */
+  /* flex-direction: column; */
+  /*flex-direction: column ; aligns the flex divs in column alignment :  Setting this makes the vertical  axis as the main axis*/
+  justify-content: center;
+  /*puts equal spaces at the end of the divs*/
+  /*justify-content: space-around;
+  puts equal spaces in around the Div*/
+  /*justify-content: space-between;
+  puts equal spaces in BETWEEN the Div*/
+  /*justify-content: flex end;
+  aligns all divs at end*/
+  /*justify-content: space-between;
+  aligns all divs at end*/
+  /*align items works in the secondary axis of the flex-direction main axis i.e if the flex-direction is row align-items work on column and if the flex direction is column the align items work on row; By default the align items' property is stretch */
+  align-items: center;
+}
+
+.flex-conatiner {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.box {
+  padding: 30px;
+  margin: 10px;
+  background-color: red;
+  color: aliceblue;
+  font-size: 15px;
+}
+
+.box-4 {
+  font-size: 50px;
+  order: 1;
+  /* order = 1 makes the div placed at end and the order =-1 places the div at start */
+}
+
+.box-flex {
+  color: aliceblue;
+  margin: 10px;
+  padding: 30px;
+  background-color: brown;
+}
+
+.b2 {
+  height: 100px;
+  order: -11;
+}
+
+/* .self-start {
+  align-self: flex-start;
+}
+
+.self-custom-start {
+  align-self: flex-start;
+  margin-left: 8.5rem;
+}
+
+.self-custom-end {
+  align-self: flex-end;
+  margin-right: 8.5rem;
+}
+
+.self-mid {
+  align-self: center;
+}
+
+.self-end {
+  align-self: flex-end;
+} */
+
+.container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.dabba {
+  color: aliceblue;
+  margin: 10px;
+  padding: 30px;
+  background-color: plum;
+}
+
+.d1 {
+  flex-grow: 1;
+  /* Grows the div size in a responsive manner */
+}
+
+.d2 {
+  flex-basis: 15%;
+  /* Grows the div size in a responsive manner ; we can provide the amount by which we would like to grow the DIV*/
+  flex-shrink: 0;
+  /* removes the responsive property of the dIV*/
+}
+
+.d5 {
+  flex: 0 0 20%; /* Short had for flex-grow:  flex-shrink:  and  flex-basis: ;*/
 }
