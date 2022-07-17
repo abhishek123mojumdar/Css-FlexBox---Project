@@ -21,6 +21,7 @@
   aligns all divs at end*/
   /*align items works in the secondary axis of the flex-direction main axis i.e if the flex-direction is row align-items work on column and if the flex direction is column the align items work on row; By default the align items' property is stretch */
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .flex-conatiner {
