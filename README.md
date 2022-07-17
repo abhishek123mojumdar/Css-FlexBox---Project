@@ -11,9 +11,15 @@ For all the beginners , this would be a nice place to start , you can read throu
 The main properties of flex box that we need to take care are
 
 display : flex
+
 flex-direction
+
 justify-content
+
 align-items
+
 align-self
+
 wrap
+
 order
